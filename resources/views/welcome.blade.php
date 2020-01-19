@@ -52,7 +52,7 @@
         </style>
     </head>
     <body>
-        @extends('layouts/app')
+        @extends('layouts.app')
     </body>
     <script src="{{ asset('js/app.js') }}"></script>
     <script>$('.carousel').carousel();</script>
