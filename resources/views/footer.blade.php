@@ -11,8 +11,8 @@
 <!-- Footer -->
 <footer class="footer navbar-expanded-lg navbar-dark bg-dark">  
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+    <div class="footer-copyright text-center py-3">Copyright &copy; Zip IT:
+      <a href="/"> www.zipit.com.pl</a>
     </div>
     <!-- Copyright -->
   
