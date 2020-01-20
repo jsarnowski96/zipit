@@ -90,7 +90,7 @@
             </div>
         </div>
     </div>
-</div>
+</div><br />
 @endsection
 @if(Route::has('dedicated_servers'))
     @yield('dedicated_servers')
