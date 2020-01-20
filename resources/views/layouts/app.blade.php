@@ -75,8 +75,39 @@
                     </div>
                 </div>
             </nav>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: whitesmoke;">
+                <div class="container d-flex justify-content-center">
+                    <div id="navbarSupportedContent">
+                        <!-- Right Side Of Navbar -->
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Serwery dedykowane
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="{{route('dedicated_servers')}}">Serwery zarządzane</a>
+                                <a class="dropdown-item" href="#">Serwery ROOT</a>
+                                <a class="dropdown-item" href="#">Serwery VPS</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Domeny
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Rejestracja domeny</a>
+                                <a class="dropdown-item" href="#">Transfer domeny</a>
+                                <a class="dropdown-item" href="#">Cennik domen</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         <main class="py-4">
-            @yield('content')
         </main>
     </div>
 </body>

@@ -15,14 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/cart', function() {
+Route::get('cart', function() {
     return view('cart/cart');
-});
+})->name('cart');
 
-Route::get('/products', function() {
+Route::get('products', function() {
+    return view('cart/products');
+})->name('products');
+
+Route::get('dedicated_servers', function() {
     $dedicated_servers = DB::table('dedicated_servers')->get();
     return view('cart/products', ['dedicated_servers' => $dedicated_servers]);
-});
+})->name('dedicated_servers');
 
 Auth::routes();
 
