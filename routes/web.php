@@ -24,12 +24,12 @@ Route::get('products', function() {
 })->name('products');
 
 Route::get('dedicated_servers', function() {
-    $products = DB::table('products')->get();
+    $products = DB::select('select * from products where product_category_id = 1');
     return view('cart/products', ['products' => $products]);
 })->name('dedicated_servers');
 
 Route::get('root_servers', function() {
-    $products = DB::table('products')->get();
+    $products = DB::select('select * from products where product_category_id = 2');
     return view('cart/products', ['products' => $products]);
 })->name('root_servers');
 
