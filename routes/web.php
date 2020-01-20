@@ -24,9 +24,14 @@ Route::get('products', function() {
 })->name('products');
 
 Route::get('dedicated_servers', function() {
-    $dedicated_servers = DB::table('dedicated_servers')->get();
-    return view('cart/products', ['dedicated_servers' => $dedicated_servers]);
+    $products = DB::table('products')->get();
+    return view('cart/products', ['products' => $products]);
 })->name('dedicated_servers');
+
+Route::get('root_servers', function() {
+    $products = DB::table('products')->get();
+    return view('cart/products', ['products' => $products]);
+})->name('root_servers');
 
 Auth::routes();
 

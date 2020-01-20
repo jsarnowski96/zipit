@@ -13,7 +13,7 @@
     }
     </style>
 <!-- Footer -->
-<footer class="navbar fixed-bottom text-center justify-content-center navbar-dark bg-dark">  
+<footer class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom justify-content-center">  
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3" style="color: whitesmoke;">Copyright &copy; Zip IT:
       <a class="nav-link" style="display: inline;" href="/"> www.zipit.com.pl</a>

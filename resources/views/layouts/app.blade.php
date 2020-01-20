@@ -86,7 +86,7 @@
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="{{route('dedicated_servers')}}">Serwery zarządzane</a>
-                                <a class="dropdown-item" href="#">Serwery ROOT</a>
+                                <a class="dropdown-item" href="{{route('root_servers')}}">Serwery ROOT</a>
                                 <a class="dropdown-item" href="#">Serwery VPS</a>
                                 </div>
                             </li>
