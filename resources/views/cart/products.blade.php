@@ -89,6 +89,7 @@
                             </tr>
                             </tbody>
                         </table>
+                        <a class="btn btn-success" href="{{route('welcome')}}">Zamów</a>
                     </div>
                     @endforeach
                 </div>
