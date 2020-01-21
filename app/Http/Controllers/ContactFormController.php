@@ -30,9 +30,6 @@ class ContactFormController extends Controller
             'status' => 'new'
         );
 
-        DB::table($table)->insertGetId([
-            [$data['name'], $data['email'], $data['subject'], $data['message'], $data['status']]
-        ]);
         return back()->with('success', 'Dziękujemy za zgłoszenie. Odezwiemy się najszybciej jak to będzie możliwe.');
     }
 }
