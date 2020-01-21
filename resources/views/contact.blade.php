@@ -17,11 +17,11 @@
                 <div class="card-header">{{ __('Formularz kontaktowy') }} </div>
 
                 <div class="card-body">
-                    <form method="POST" id="contact_form" action=""{{ route('contact_form_messages')}}>
+                    <form method="POST" id="contact_form" action="{{ route('contact_form_messages')}}">
                         @csrf
                         <div class="form-group {{ $errors->has('name') ? ' has-error' : '' }}">
                             <label for="name">Imię</label>
-                            <input type="name" class="form-control" id="name" required>
+                            <input type="name" class="form-control" name="name" required>
                             @if ($errors->has('name'))
 								<span class="help-block">
 									<strong>{{ $errors->first('name') }}</strong>
@@ -30,7 +30,7 @@
                         </div>
                         <div class="form-group {{ $errors->has('email') ? ' has-error' : '' }}">
                             <label for="email">Adres e-mail</label>
-                            <input type="email" class="form-control" id="email" required>
+                            <input type="email" class="form-control" name="email" required>
                             @if ($errors->has('email'))
 								<span class="help-block">
 									<strong>{{ $errors->first('email') }}</strong>
@@ -39,7 +39,7 @@
                           </div>
                         <div class="form-group {{ $errors->has('subject') ? ' has-error' : '' }}">
                           <label for="subject">Temat zgłoszenia</label>
-                          <select class="form-control" id="subject" required>
+                          <select class="form-control" name="subject">
                             <option>Problem techniczny</option>
                             <option>Pytanie dotyczące oferty</option>
                             <option>Płatności i rozliczenia</option>
@@ -53,7 +53,7 @@
                         </div>
                         <div class="form-group {{ $errors->has('message') ? ' has-error' : '' }}">
                           <label for="message">Treść zgłoszenia</label>
-                          <textarea class="form-control" id="message" rows="3"></textarea>
+                          <textarea class="form-control" name="message" rows="3"></textarea>
                             @if ($errors->has('message'))
 								<span class="help-block">
 									<strong>{{ $errors->first('message') }}</strong>
