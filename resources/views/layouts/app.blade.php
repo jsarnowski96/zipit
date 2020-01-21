@@ -18,6 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <style>body { background-image: url('images/slide2.jpg'); background-position: center; background-attachment: fixed;)}</style>
 </head>
 <body>
     <div id="app">
@@ -46,7 +48,7 @@
                                 <a class="nav-link" href="/cart">Koszyk</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="/">Kontakt</a>
+                                <a class="nav-link" href="/contact">Kontakt</a>
                             </li>
                             @guest
                                 <li class="nav-item">

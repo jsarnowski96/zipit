@@ -33,6 +33,9 @@ Route::get('root_servers', function() {
     return view('cart/products', ['products' => $products]);
 })->name('root_servers');
 
+Route::get('contact', 'ContactFormController@index')->name('contact');
+Route::post('contact', ['as' => 'contact_form_messages', 'uses' => 'ContactFormController@SendFormData']);
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
